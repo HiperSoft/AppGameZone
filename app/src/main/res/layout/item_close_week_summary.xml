@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_close_week_summary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/item_close_week_summary_text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:text="@string/default_item"
+        android:textColor="@color/black_pearl"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/item_close_week_summary_image_status"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal"
+        android:src="@mipmap/ic_check"
+        app:srcCompat="@mipmap/ic_check" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prize_summary_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/snow"
+    tools:context="com.hunabsys.gamezone.views.activities.prizes.PrizeSummaryActivity">
+
+    <include
+        android:id="@+id/prize_summary_machine_folio_bar"
+        layout="@layout/partial_machine_folio_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/prize_summary_machine_folio_bar">
+
+        <LinearLayout
+            android:id="@+id/prize_summary_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/prize_summary_text_title"
+                style="@style/TitleFormTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:text="@string/prizes_summary_instruction" />
+
+            <ListView
+                android:id="@+id/prize_summary_list"
+                android:layout_width="match_parent"
+                android:layout_height="387dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:divider="@android:color/transparent"
+                android:elevation="4dp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" />
+
+            <LinearLayout
+                android:id="@+id/prize_summary_layout_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="36dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/prize_summary_text_field_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/prizes_comments" />
+
+                <EditText
+                    android:id="@+id/prize_summary_edit_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/selector_field_background"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/default_hint_optional"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:textColor="@drawable/selector_field_text_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/prize_summary_button_save"
+                style="@style/PrimaryRoundedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/action_save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/prize_summary_progress"
+        style="@android:style/Widget.Material.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

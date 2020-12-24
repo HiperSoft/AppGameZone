@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.stepstone.stepper.StepperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/stepper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:ms_activeStepColor="@color/color_accent"
+        app:ms_backButtonColor="@color/silver"
+        app:ms_backButtonText="@string/action_back"
+        app:ms_completeButtonColor="@color/silver"
+        app:ms_completeButtonText="@string/action_complete"
+        app:ms_inactiveStepColor="@color/gainsboro"
+        app:ms_nextButtonColor="@color/silver"
+        app:ms_nextButtonText="@string/action_next"
+        app:ms_stepperType="dots" />
+</FrameLayout>

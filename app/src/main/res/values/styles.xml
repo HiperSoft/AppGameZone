@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="actionBarTheme">@style/ActionBarTitleText</item>
+
+        <item name="android:statusBarColor">@color/color_primary_dark</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBarTitleText" parent="AppTheme.NoActionBar">
+        <item name="android:actionMenuTextColor">@color/black_pearl</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MaterialFieldTextLabel" parent="AppTheme.NoActionBar">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/steel_grey_50</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorControlActivated">@color/charcoal_grey</item>
+    </style>
+
+    <style name="TitleFormTextLabel" parent="AppTheme.NoActionBar">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/dim_gray</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingStart">32dp</item>
+        <item name="android:paddingEnd">32dp</item>
+    </style>
+
+    <style name="PrimaryRoundedButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/shape_button_rounded_primary_red</item>
+    </style>
+
+    <style name="SecondaryRoundedButton" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red_orange</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/shape_button_rounded_secondary_red</item>
+    </style>
+
+</resources>

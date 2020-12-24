@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/negative_field_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hunabsys.gamezone.views.fragments.NegativeFieldFragment">
+
+    <TextView
+        android:id="@+id/negative_field_text_label"
+        style="@style/TitleFormTextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/default_item" />
+
+    <LinearLayout
+        android:id="@+id/negative_field_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/negative_field_edit_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/selector_field_background"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/default_zero"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@drawable/selector_field_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/negative_field_button_negative"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/shape_button_round_primary_red"
+            android:text="—"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/negative_field_button_photo"
+        style="@style/SecondaryRoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@mipmap/ic_camera_red"
+        android:paddingEnd="32dp"
+        android:paddingStart="48dp"
+        android:text="@string/action_take_photo" />
+
+    <ImageView
+        android:id="@+id/fragment_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_report_image" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sale_revision_form_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hunabsys.gamezone.views.activities.salerevisions.SaleRevisionFormActivity">
+
+    <include
+        android:id="@+id/sale_revision_form_game_machine_bar"
+        layout="@layout/partial_machine_folio_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <include
+        android:id="@+id/sale_revision_form_stepper"
+        layout="@layout/partial_stepper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sale_revision_form_game_machine_bar" />
+
+</RelativeLayout>

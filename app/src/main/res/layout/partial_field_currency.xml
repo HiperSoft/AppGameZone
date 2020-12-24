@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/field_currency_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/field_currency_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/field_currency_text_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/default_item" />
+
+        <faranjit.currency.edittext.CurrencyEditText
+            android:id="@+id/field_currency_edit_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/selector_field_background"
+            android:gravity="center_vertical"
+            android:hint="@string/default_currency"
+            android:inputType="number"
+            android:maxLength="13"
+            android:textColor="@drawable/selector_field_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:showSymbol="true" />
+    </LinearLayout>
+
+</LinearLayout>

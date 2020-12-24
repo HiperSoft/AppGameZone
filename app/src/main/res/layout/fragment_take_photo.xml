@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/take_photo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hunabsys.gamezone.views.fragments.TakePhotoFragment">
+
+    <TextView
+        android:id="@+id/take_photo_text_label"
+        style="@style/TitleFormTextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/default_item" />
+
+    <faranjit.currency.edittext.CurrencyEditText
+        android:id="@+id/take_photo_edit_value_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector_field_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/default_currency"
+        android:inputType="number"
+        android:maxLength="13"
+        android:textColor="@drawable/selector_field_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:showSymbol="true" />
+
+    <EditText
+        android:id="@+id/take_photo_edit_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/selector_field_background"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/default_zero"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textColor="@drawable/selector_field_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/take_photo_button_photo"
+        style="@style/SecondaryRoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:drawableStart="@mipmap/ic_camera_red"
+        android:paddingEnd="32dp"
+        android:paddingStart="48dp"
+        android:text="@string/action_take_photo" />
+
+    <ImageView
+        android:id="@+id/fragment_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_report_image" />
+
+</LinearLayout>

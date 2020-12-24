@@ -1,0 +1,264 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">GameZone</string>
+
+    <!-- DEFAULTS -->
+    <string name="default_no_logout">¡Aún no es posible cerrar sesión!</string>
+    <string name="default_no_photos">¡Aún no es posible tomar fotos!</string>
+    <string name="default_item">Item</string>
+    <string name="default_currency">$0.00</string>
+    <string name="default_zero">0</string>
+    <string name="default_hint_optional">(Opcional)</string>
+    <string name="default_hint_credits">Créditos</string>
+    <string name="default_no_functionality">Funcionalidad no disponible</string>
+    <string name="default_no_data">No hay información que eliminar</string>
+
+    <!-- ACTIONS -->
+    <string name="action_back">Anterior</string>
+    <string name="action_next">Siguiente</string>
+    <string name="action_complete">Terminar</string>
+    <string name="action_take_photo">Tomar foto</string>
+    <string name="action_calculate">Calcular</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="action_accept">Aceptar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_send">Enviar</string>
+    <string name="action_exit">Salir</string>
+    <string name="action_location_settings">Configurar ubicación</string>
+    <string name="action_sync">Sincronizar</string>
+
+    <!-- MESSAGES -->
+    <string name="message_finished">¡COMPLETADO!</string>
+    <string name="message_unsaved_changes">
+        Perderás todos los cambios realizados, ¿seguro de que deseas continuar?
+    </string>
+    <string name="message_saved_changes">Los datos han sido guardados con éxito</string>
+    <string name="message_disable_location">El GPS se encuentra deshabilitado,
+        ¿deseas habilitarlo?</string>
+    <string name="message_enable_location">Habilitar GPS</string>
+    <string name="message_enable_location_long">
+        Para poder guardar esta información, es necesario que habilites el GPS del dispositivo
+    </string>
+    <string name="message_location_not_detected">Ubicación no detectada</string>
+    <string name="message_saved_photo">La imagen han sido guardada con éxito</string>
+    <string name="message_logout">¿Seguro de que deseas cerrar sesión?</string>
+    <string name="message_session_expired">Tu sesión ha expirado, para poder continuar debes
+        iniciar sesión nuevamente.</string>
+
+    <!-- ERRORS -->
+    <string name="error_default">
+        Ha ocurrido un problema con el servidor, intenta de nuevo más tarde
+    </string>
+    <string name="error_unauthorized">Tu usuario o contraseña son inválidos</string>
+    <string name="error_not_found">El contenido solicitado no fue encontrado</string>
+    <string name="error_wrong_user_name">
+        Un nombre de usuario solo puede contener caracteres alfanuméricos (a-Z, 0-9)
+    </string>
+    <string name="error_empty_username">Debes ingresar un nombre de usuario</string>
+    <string name="error_empty_password">Debes ingresar una contraseña</string>
+    <string name="error_no_internet_connection">
+        Por favor, revisa tu conexión a Internet. No es posible conectarse en este momento.
+    </string>
+    <string name="error_missing_permissions">
+        Por favor, otorga los permisos necesarios para continuar
+    </string>
+    <string name="error_unregistered_code">
+        El código leído no se encuentra registrado en la ruta
+    </string>
+    <string name="error_unregistered_pos">
+        El punto de venta leído no pertenece a esta ruta
+    </string>
+    <string name="error_incomplete_step">Debes ingresar una cantidad para continuar</string>
+    <string name="error_incomplete_step_text">Debes ingresar un concepto para continuar</string>
+    <string name="error_incomplete_step_photo">Debes capturar una foto para continuar</string>
+    <string name="error_empty_fields">Debes llenar todos los campos para continuar</string>
+    <string name="error_saving">
+        Ha ocurrido un error al guardar los datos, verifícalos e intenta de nuevo
+    </string>
+    <string name="error_user_unsigned_routes">No se tienen rutas asignadas, contacte al administrador
+        del sistema</string>
+    <string name="error_user_unsigned_pointofsales">No se tienen puntos de venta asignados,
+        contacte al administrador del sistema</string>
+    <string name="error_storage_available">No cuenta con espacio suficiente, favor de liberar
+        espacio para poder continuar.</string>
+    <string name="error_corrupt_information_message">Ocurrió un error interno con la información
+        capturada, contacte al administrador del sistema</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_copyright">Copyright © 2018 Hirata Group</string>
+
+    <!-- LoginActivity -->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_user">Usuario</string>
+    <string name="login_password">Contraseña</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">Menú principal</string>
+    <string name="main_week">Semana</string>
+    <string name="main_sale_revisions">Cortes</string>
+    <string name="main_prizes">Premios</string>
+    <string name="main_expenses">Gastos</string>
+    <string name="main_finish_week">Terminar semana</string>
+    <string name="main_clear">Borrar informacion</string>
+    <string name="main_check_in">Visitas</string>
+    <string name="main_delete_start">¿Seguro que quieres borrar la información?</string>
+    <string name="main_delete_done">Informacion borrada</string>
+
+    <!-- CheckInActivity & CheckInConfirmActivity -->
+    <string name="check_in_title">Visitas</string>
+    <string name="check_in_no_data">Sin visitas\nrealizadas</string>
+    <string name="check_in_save">Guardar</string>
+    <string name="check_in_confirm_title">Confirmar visita</string>
+    <string name="check_in_done_check_ins">Visitas realizadas</string>
+    <string name="check_in_date">Fecha</string>
+    <string name="check_in_synced_visit">La visita ha sido enviada</string>
+    <string name="check_in_synced_visits">Las visitas han sido enviadas</string>
+    <string name="check_in_synced_failed">Quedaron visitas pendientes de enviar, favor de
+        reintentar más tarde.</string>close_week_titl
+    <string name="check_in_not_pending">No hay visitas pendientes de enviar</string>
+    <string name="check_in_some_visits_failed">La visita no pudo ser enviada</string>
+    <string name="check_in_syncing">Las visitas se están enviando, este proceso puede
+        demorar unos minutos</string>
+
+    <!-- SaleRevisionsActivity -->
+    <string name="sale_revisions_title">Cortes</string>
+    <string name="sale_revisions_done_revisions">Cortes realizados</string>
+    <string name="sale_revisions_no_data">Sin cortes\nrealizados</string>
+    <string name="sale_revisions_calculated">Calculado</string>
+    <string name="sale_revisions_real">Real</string>
+    <string name="sale_revisions_difference">Diferencia</string>
+    <string name="sale_revisions_synced">Los cortes han sido enviados</string>
+    <string name="sale_revision_synced">El corte ha sido enviado</string>
+    <string name="sale_revisions_not_pending">No hay cortes pendientes de enviar</string>
+    <string name="sale_revisions_some_failed">El corte no pudo ser enviado</string>
+    <string name="sale_revisions_syncing">Los cortes se están enviando, este proceso puede
+        demorar unos minutos</string>
+
+    <!-- SaleRevisionsFormActivity & related Fragments -->
+    <string name="sale_revision_form_title">Nuevo corte</string>
+    <string name="sale_revisions_entry_instruction">1. Captura la entrada</string>
+    <string name="sale_revisions_outcome_instruction">2. Captura la salida</string>
+    <string name="sale_revisions_screen_instruction">3. Captura la pantalla</string>
+    <string name="sale_revisions_taken_instruction">
+        4. Captura cuánto se sacó del\n\u0020\u0020\u0020\u0020equipo
+    </string>
+    <string name="sale_revisions_commission_instruction">5. Captura la comisión pagada</string>
+    <string name="sale_revisions_calculate_commission">Calcular comisión</string>
+    <string name="sale_revisions_taken">Sacado de equipo</string>
+    <string name="sale_revisions_commission_percentage">Comisión en % 0–99</string>
+    <string name="sale_revisions_current_fund_instruction">6. Captura el fondo actual</string>
+    <string name="sale_revisions_real_fund">Fondo real:</string>
+    <string name="sale_revisions_comments">Comentarios</string>
+    <string name="sale_revisions_negative">-</string>
+    <string name="sale_revisions_summary_instruction">7. Revisa los datos del corte</string>
+
+    <string-array name="sale_revisions_summary">
+        <item>Entrada</item>
+        <item>Salida</item>
+        <item>Pantalla</item>
+        <item>Sacado de equipo</item>
+        <item>Comisión pagada</item>
+        <item>Fondo actual</item>
+        <item>Comentarios</item>
+    </string-array>
+
+    <!-- PrizesActivity -->
+    <string name="prizes_title">Premios</string>
+    <string name="prizes_given_prizes">Premios entregados</string>
+    <string name="prizes_no_data">Sin premios\nentregados</string>
+    <string name="prizes_amount_label">Cantidad:</string>
+    <string name="prizes_synced">Los premios han sido enviados</string>
+    <string name="prize_synced">El premio ha sido enviado</string>
+    <string name="prizes_not_pending">No hay premios pendientes de enviar</string>
+    <string name="prizes_some_failed">El premio no pudo ser enviado</string>
+    <string name="prizes_syncing">Los premios se están enviando, este proceso puede
+        demorar unos minutos</string>
+
+    <!-- PrizesFormActivity & related Fragments -->
+    <string name="prizes_form_title">Nuevo premio</string>
+    <string name="prizes_entry_instruction">1. Captura la entrada</string>
+    <string name="prizes_outcome_instruction">2. Captura la salida</string>
+    <string name="prizes_screen_instruction">3. Captura la pantalla</string>
+    <string name="prizes_prize_instruction">4. Captura el premio</string>
+    <string name="prizes_inside_machine_instruction">
+        5. Captura cuánto había dentro del equipo
+    </string>
+    <string name="prizes_complete_instruction">6. Captura cuánto se acompletó</string>
+    <string name="prizes_current_fund_instruction">7. Captura el fondo actual</string>
+    <string name="prizes_real_fund">Fondo real:</string>
+    <string name="prizes_expense_instruction">8. Captura el gasto realizado</string>
+    <string name="prizes_summary_instruction">9. Revisa los datos del premio</string>
+    <string name="prizes_comments">Comentarios</string>
+
+    <string-array name="prizes_summary">
+        <item>Entrada</item>
+        <item>Salida</item>
+        <item>Pantalla</item>
+        <item>Premio</item>
+        <item>Dentro del equipo</item>
+        <item>Acompletado</item>
+        <item>Fondo actual</item>
+        <item>Gasto</item>
+        <item>Comentarios</item>
+    </string-array>
+
+    <!-- ExpensesActivity -->
+    <string name="expenses_title">Gastos</string>
+    <string name="expenses_given_expense">Gasto realizado</string>
+    <string name="expenses_given_expenses">Gastos realizados</string>
+    <string name="expenses_no_data">Sin gastos\nrealizados</string>
+    <string name="expenses_concept">Concepto:</string>
+    <string name="expenses_amount">Cantidad:</string>
+    <string name="expenses_synced">Los gastos han sido enviados</string>
+    <string name="expense_synced">El gasto ha sido enviado</string>
+    <string name="expenses_not_pending">No hay gastos pendientes de enviar</string>
+    <string name="expenses_some_failed">El gasto no ha sido enviado</string>
+    <string name="expenses_syncing">Los gastos se están enviando, este proceso puede
+        demorar unos minutos</string>
+
+    <!-- ExpensesFormActivity & realted Fragments-->
+    <string name="expenses_form_title">Nuevo gasto</string>
+    <string name="expenses_concept_instruction">1. Captura el concepto del gasto</string>
+    <string name="expenses_amount_instruction">2. Captura cuánto se gastó</string>
+    <string name="expenses_summary_instruction">3. Revisa los datos del gasto</string>
+    <string name="expenses_comments">Comentarios</string>
+
+    <string-array name="expenses_summary">
+        <item>Punto de venta</item>
+        <item>Concepto</item>
+        <item>Cantidad</item>
+        <item>Comentarios</item>
+    </string-array>
+
+    <!-- CloseWeekActivity -->
+    <string name="close_week_title">Terminar semana</string>
+    <string name="close_week_success">La semana terminó</string>
+    <string name="close_week_failure">No se pudo terminar la semana</string>
+    <string name="close_week_nothing_captured">
+        ¿Seguro de que quieres terminar la semana sin haber capturado información?
+    </string>
+    <string name="close_week_not_synced">Falta sincronizar:</string>
+    <string name="close_week_pending">Tienes datos pendientes de enviar:</string>
+    <string name="close_week_pending_data">
+        Por favor envía la información pendiente para poder continuar.
+    </string>
+    <string name="close_week_machine">Máquina</string>
+    <string name="close_week_status">Estado</string>
+
+    <string-array name="close_week">
+        <item>Venta total</item>
+        <item>Premios</item>
+        <item>Gastos</item>
+        <item>Total</item>
+    </string-array>
+
+    <!-- Evidences -->
+    <string name="evidences_synced">"Las evidencias han sido enviadas</string>
+    <string name="evidences_not_pending">No hay evidencias pendientes de enviar</string>
+    <string name="evidences_some_failed">
+        Algunas evidencias no pudieron ser enviadas
+    </string>
+
+    <string name="clear_title">Borrar informacion</string>
+</resources>

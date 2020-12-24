@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/splash_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context="com.hunabsys.gamezone.views.activities.SplashActivity">
+
+    <TextView
+        android:id="@+id/splash_text_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/splash_copyright"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="12sp" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/splash_progress_wheel"
+        android:layout_width="280dp"
+        android:layout_height="290dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        wheel:matProg_barColor="@color/black_pearl"
+        wheel:matProg_fillRadius="true"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <ImageView
+        android:id="@+id/splash_image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp"
+        android:paddingBottom="5dp"
+        android:src="@mipmap/img_logo"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
